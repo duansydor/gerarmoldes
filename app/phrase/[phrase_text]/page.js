@@ -3,7 +3,7 @@ import React from 'react';
 import { useParams } from 'next/navigation'
 function Phrase(props) {
     const params = useParams()
-    let toArray = params.phrase.split("")
+    let toArray = params.phrase_text.split("")
 
     console.log(toArray)
     return (
