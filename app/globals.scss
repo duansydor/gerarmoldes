@@ -1,0 +1,105 @@
+// color: rgb(var(--foreground-rgb));
+  // background: linear-gradient(
+  //     to bottom,
+  //     transparent,
+  //     rgb(var(--background-end-rgb))
+  //   )
+  //   rgb(var(--background-start-rgb));
+  
+$orange:#FDA95C;
+$grey:#D9D9D9;
+$blue:#9CC0E2;
+$purple:#7C2484;
+
+*{
+  margin:0px;
+}
+
+body {
+  background-image: url("/background.png");
+}
+.index-container{
+  display: flex;
+  justify-content: center;
+  margin:30px;
+}
+.generator-container{
+  background-color: $orange;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width:600px;
+  height:500px;
+  border-radius: 10px;
+  -webkit-box-shadow: 7px 6px 15px -6px rgba(0,0,0,0.5);
+  -moz-box-shadow: 7px 6px 15px -6px rgba(0,0,0,0.5);
+  box-shadow: 7px 6px 15px -6px rgba(0,0,0,0.5);
+  h1{
+    margin-top: 85px;
+    margin-bottom: 40px;
+  }
+  form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .input-field{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-bottom:30px;
+    label{
+      margin-bottom: 10px;
+    }
+    input{
+      height: 35px;
+      width: 314px;
+      border: none;
+      border-radius: 5px;
+    }
+  }
+  .input-group{
+    display: flex;
+    justify-content: center;
+    input{
+      margin-right:10px;
+      width: 95px;
+    }
+  }
+  .submit{
+    width:100px;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    align-self: center;
+    text-align: center;
+    background-color: $blue;
+    text-decoration: none;
+    color: black;
+    border-radius: 5px;
+    -webkit-box-shadow: 5px 8px 24px -11px rgba(0,0,0,0.75);
+    -moz-box-shadow: 5px 8px 24px -11px rgba(0,0,0,0.75);
+    box-shadow: 5px 8px 24px -11px rgba(0,0,0,0.75);
+  }
+  .insta-link{
+    margin-top: auto;
+    margin-bottom: 10px;
+    font-size: 15px;
+    a{
+      color:$purple;
+      text-decoration: none;
+    }
+  }
+}
+
+.phrase{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-size: 800px;
+  letter-spacing: 0px;
+  font-weight: bolder;
+}
