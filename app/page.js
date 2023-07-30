@@ -1,12 +1,17 @@
 "use client"
 import Image from 'next/image'
 import Link from 'next/link'
+import { useRouter } from 'next/navigation'
 import { useState } from 'react'
 
 export default function Home() {
   let [state, setState] = useState()
+  //const router = useRouter()
   let getPhrase = (event) => {
     setState(event.target.value)
+  }
+  let changeRoute = () => {
+    console.log("oi")
   }
   return (
     <div className='index-container' ba>
@@ -34,7 +39,7 @@ export default function Home() {
             </div>
           </div>
           <div className='input-field '>
-            <Link href={"/phrase/" + state} className='submit'>Submit</Link>
+            <Link className='submit' href={"/" + state}>Enviar</Link>
           </div>
         </form>
         <span className='insta-link'>
