@@ -33,7 +33,7 @@ export default function Home() {
             </div>
           </div>
           <div className='input-field '>
-            <a href={"/" + state} className='submit'>Submit</a>
+            <a href={"/phrase/" + state} className='submit'>Submit</a>
           </div>
         </form>
         <span className='insta-link'>
