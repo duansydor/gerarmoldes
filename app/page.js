@@ -1,5 +1,6 @@
 "use client"
 import Image from 'next/image'
+import Link from 'next/link'
 import { useState } from 'react'
 
 export default function Home() {
@@ -33,7 +34,7 @@ export default function Home() {
             </div>
           </div>
           <div className='input-field '>
-            <a href={"/phrase/" + state} className='submit'>Submit</a>
+            <Link href={"/phrase/" + state} className='submit'>Submit</Link>
           </div>
         </form>
         <span className='insta-link'>
