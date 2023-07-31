@@ -41,7 +41,7 @@ export default function Home() {
           </div>
         </form>
         <span className='insta-link'>
-          By <a hrfe="https://www.instagram.com/ssatanael123/">@ssatanael123</a>
+          By <a hreF="https://www.instagram.com/ssatanael123/">@ssatanael123</a>
         </span>
       </div>
     </div>
